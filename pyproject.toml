@@ -1,0 +1,18 @@
+[project]
+name = "ml-project-meps"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "numpy>=2.5.4",
+    "pandas>=3.1.0",
+    "polars>=2.1.0",
+]
+
+[project.scripts]
+ml-project-meps = "ml_project_meps:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
